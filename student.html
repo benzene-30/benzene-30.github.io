@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/student.css">
+    <title>orar student</title>
+    <link rel="icon" href="images/logo/favicon-uab.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <article>
+                <img src="images/logo/logo.png" class="logo" alt="logo">
+            </article>
+            <article class="desktop-nav-bar">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#social">Contact Us</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </article>
+            <article class="mobile-nav-bar">
+                <!--menuButton for mobile view -->
+                <img src="images/button/main-menu.png" class="cdx" alt="Menu" width="40" height="40" id="menuButton">
+                <!-- Mobile navigation menu -->
+                <div id="mobile-nav" class="overlay">
+                    <img src="images/button/close_1.png" class="closebtn" alt="Close" width="40" height="40"
+                        id="closeButton">
+                    <div class="overlay-content">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </nav>
+    </header>
+
+    <div id="wrapper">
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div>
+                <img src="images/programs/orarStudent.png" alt="slide-1">
+                <div class="hero-text">~ INFO ZONE</div>
+            </div>
+        </section>
+
+        <!-- PROGRAMS --><br>
+        <h3 class="title">ORAR UAB</h3>
+        <div id="programs-wrapper">
+            <section id="programs">
+                <select class="faculties-dropdown box" id="facultyDropdown">
+                    <option value="">---Selectați o facultate---</option>
+                    <option value="FII-faculty-specialization">Stiinte Exacte si ingineresti</option>
+                    <option value="faculty-languages-specialization">Istorie si Fiologie</option>
+                    <option value="faculty-law-specialization">Drept si Stiinte Sociale</option>
+                    <option value="faculty-economics-specialization">Stiinte Economice</option>
+                    <option value="faculty-theology-specialization">Teologie Ortodoxa</option>
+                    <option value="faculty-IOSUD-specialization">IOSUD-UAB (Socoala doctorala)</option>
+                </select>
+
+                <div class="specializations" id="specializations">
+                    <!-- Faculty of Engineering and Informatics -->
+                    <select id="FII-faculty-specialization" class="faculty-specialization box" style="display: none;">
+                        <option value="">---Selectați o specializare---</option>
+                        <option value="1">Stiinte Exacte si ingineresti</option>
+                        <option value="2">Invatamant la distanța</option>
+                        <option value="3">Licența Infomatica</option>
+                        <option value="4">Licența - Electronica aplicata</option>
+                        <option value="5">Licența - Informatica Engleză</option>
+                        <option value="6">Licența - Ingineria mediului</option>
+                        <option value="7">Licența - IUDR</option>
+                        <option value="8">Licența - MTC</option>
+                        <option value="9">Master - EMAM</option>
+                        <option value="10">Master - PABD</option>
+                        <option value="11">Master - SEIA</option>
+                        <option value="12">Master - SICMI</option>
+                        <option value="13">Misc - Activitați de cercetare</option>
+                        <option value="14">Misc - Erasmus</option>
+                    </select>
+
+                    <!-- Faculty of Languages -->
+                    <select id="faculty-languages-specialization" class="faculty-specialization  box"
+                        style="display: none;">
+                        <option value="">---Selectați o specializare---</option>
+                        <option value="1">Arheologie</option>
+                        <option value="2">Curs Limbă română stud. Erasmus</option>
+                        <option value="3">Curs Limbă română stud. Erasmus</option>
+                        <option value="4">Franceză-Engleză</option>
+                        <option value="5">Istorie</option>
+                        <option value="6">LRS</option>
+                        <option value="7">Master-ME</option>
+                        <option value="8">Master-PETSM</option>
+                        <option value="9">Master engleză</option>
+                        <option value="10">Master romnână</option>
+                        <option value="11">Masterat Cercetare arheologică interdisciplinară</option>
+                        <option value="12">Masterat Cercetarea, conservarea și valorificarea</option>
+                        <option value="13">Masterat Identități regionale în Europa central</option>
+                        <option value="14">Masterat Studii muzeale și turism cultural</option>
+                        <option value="15">Misc - Activitați de cercetare</option>
+                        <option value="16">PIPP ID</option>
+                        <option value="17">Romană - Engleză</option>
+                        <option value="18">Romană - Franceză</option>
+                        <option value="19">Școală Doctorala de Filologie</option>
+                        <option value="20">Traducere și interpretare EN-FR</option>
+                        <option value="21">Traducere și interpretare Germană - Engleză</option>
+                        <option value="22">Tutorat</option>
+                    </select>
+
+                    <!-- Faculty of Law -->
+                    <select id="faculty-law-specialization" class="faculty-specialization box" style="display: none;">
+                        <option value="">---Selectați o specializare---</option>
+                        <option value="1">Alte Activitați sportive</option>
+                        <option value="2">AP</option>
+                        <option value="3">Asistenta medicală generală</option>
+                        <option value="4">Asistenta Socială</option>
+                        <option value="5">Drept</option>
+                        <option value="6">Educație fizică și sport</option>
+                        <option value="7">Kinetoterapie</option>
+                        <option value="8">Master AMA</option>
+                        <option value="9">Master DMRU</option>
+                        <option value="10">Master IDP</option>
+                        <option value="11">Master Management educational</option>
+                        <option value="12">Master OSIE</option>
+                        <option value="13">Master PMS</option>
+                        <option value="14">Master SPC</option>
+                        <option value="15">Master Psihopedagogic II</option>
+                        <option value="16">PETSM</option>
+                        <option value="17">PIPP</option>
+                        <option value="18">Program postuniversitar-Formarea profesorilor</option>
+                        <option value="19">Resurse umane</option>
+                        <option value="20">Sociologie</option>
+                        <option value="21">Terapie ocupatională</option>
+                    </select>
+
+                    <!-- Faculty of Economics -->
+                    <select id="faculty-economics-specialization" class="faculty-specialization box"
+                        style="display: none;">
+                        <option value="">---Selectați o specializare---</option>
+                        <option value="1">AA</option>
+                        <option value="2">AA ID</option>
+                        <option value="3">ACAE</option>
+                        <option value="4">Banci asigurari și piete financiare</option>
+                        <option value="5">BAPF</option>
+                        <option value="6">Business Administration</option>
+                        <option value="7">Cercetare DAAMK</option>
+                        <option value="8">CIG</option>
+                        <option value="9">CIG ID</option>
+                        <option value="10">DAAMK Erasmus</option>
+                        <option value="11">ECTS</option>
+                        <option value="12">ECTS ID</option>
+                        <option value="13">Erasmus</option>
+                        <option value="14">Erasmus DAAMK</option>
+                        <option value="15">Finante Banci</option>
+                        <option value="16">Invatamant la distanța</option>
+                        <option value="17">Marketing</option>
+                        <option value="18">Master AACTS</option>
+                        <option value="19">Master ADRD</option>
+                        <option value="20">Master FMF</option>
+                        <option value="21">Master in Business Administration</option>
+                        <option value="22">Master Marketing și promovarea vanzarilor</option>
+                        <option value="23">SICADM</option>
+                    </select>
+
+                    <!-- Faculty of Theology -->
+                    <select id="faculty-theology-specialization" class="faculty-specialization box"
+                        style="display: none;">
+                        <option value="">---Selectați o specializare---</option>
+                        <option value="1">Arta sacra</option>
+                        <option value="2">Cinematografie, fotografie, media (Communicare audi)</option>
+                        <option value="3">Mediere interculturala și interreligioase</option>
+                        <option value="4">Muzica Religioasă</option>
+                        <option value="5">Muzica Religioasă și folclor muzical</option>
+                        <option value="6">Științe Politice</option>
+                        <option value="7">Teologie Ortodoxa</option>
+                        <option value="8">Teologie Romano-Catolică pastorală</option>
+                    </select>
+
+                    <!-- IOSUD-UAB -->
+                    <select id="faculty-IOSUD-specialization" class="faculty-specialization box" style="display: none;">
+                        <option value="">---Selectați o specializare---</option>
+                        <option value="1">Facultatea de Drept și Stiinte Sociale</option>
+                        <option value="2">Facultatea de Istorie și Filologie</option>
+                        <option value="3">Facultatea de Stiinte Economice</option>
+                        <option value="4">Facultatea de Teologie Ortodoxa</option>
+                        <option value="5">Facultatea de Stiinte exacte și inginerești</option>
+                    </select>
+                </div>
+                <!-- Year of Study -->
+                <div id="year" class="box" style="display: none;">
+                    <select id="yearDropdown">
+                        <option value="">---Selectați un an---</option>
+                        <option value="1">Anul I</option>
+                        <option value="2">Anul II</option>
+                        <option value="3">Anul III</option>
+                    </select>
+                </div>
+
+                <!-- Select a Group -->
+                <div id="group" class="box" style="display: none;">
+                    <select id="groupDropdown">
+                        <option value="">---Selectați o grupă---</option>
+                        <option value="1">Grupa 1</option>
+                        <option value="2">Grupa 2</option>
+                        <option value="3">Grupa 3</option>
+                        <option value="3">Toate</option>
+                    </select>
+
+                </div>
+                <!-- Display Button -->
+                <button id="displayButton" style="display: none;">Display</button>
+            </section>
+        </div>
+
+        <!-- CONTACT -->
+        <section id="Contact">
+            <div class="contact-logo">
+                <img src="images/logo/contact-logo.png" alt="logo">
+            </div>
+            <div class="info-container">
+                <h3>Location</h3>
+                <div class="location">
+                    <img src="images/SocialMedia/location.png" width="24px" height="24px" alt="location">
+                    <a href="https://maps.app.goo.gl/gou4k8Fn6aKYPnxi9" target="_blank">
+                        <p>Gabriel Bethlen Nr.5, Alba Iulia</p>
+                    </a>
+                </div>
+            </div>
+            <div class="info-container">
+                <h3>Contact Us</h3>
+                <div class="social-media-icons" id="social">
+                    <a href="mailto:biroulit@uab.ro" target="_blank"><img src="images/SocialMedia/email.png"
+                            alt="Email"></a>
+                    <a href="tel:0786349843" target="_blank"><img src="images/SocialMedia/telephone.png"
+                            alt="Telephone"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;Copyrights UAB 2024</p>
+    </footer>
+    <script src="js/student.js"></script>
+</body>
+
+</html>
