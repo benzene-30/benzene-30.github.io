@@ -74,11 +74,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     displayButton.addEventListener('click', function () {
-        const faculty = facultyDropdown.value.trim().replace(/\s+/g, '');
+        const faculty = facultyDropdown.value.trim().replace(/\s+/g, '%20');
         const selectedSpecializationDropdown = document.querySelector('.faculty-specialization:not([style*="display: none"])');
-        const specialization = selectedSpecializationDropdown ? selectedSpecializationDropdown.options[selectedSpecializationDropdown.selectedIndex].text.trim().replace(/\s+/g, '') : '';
-        const year = yearDropdown.options[yearDropdown.selectedIndex].text.trim().replace(/\s+/g, '');
-        const group = groupDropdown.options[groupDropdown.selectedIndex].text.trim().replace(/\s+/g, '');
+        const specialization = selectedSpecializationDropdown ? selectedSpecializationDropdown.options[selectedSpecializationDropdown.selectedIndex].text.trim().replace(/\s+/g, '%20') : '';
+        const year = yearDropdown.options[yearDropdown.selectedIndex].text.trim().replace(/\s+/g, '%20');
+        const group = groupDropdown.options[groupDropdown.selectedIndex].text.trim().replace(/\s+/g, '%20');
 
         if (!faculty || !specialization || !year || !group) {
             alert("Please make sure all selections are made.");
@@ -86,13 +86,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const fileName = `${faculty}_${specialization}_${year}_${group}.pdf`; // Assuming timetable is in PDF format
-        const filePath = `orar studenți/${faculty}/${specialization}/${year}/${fileName}`; // Path to the timetable PDF
+        const filePath = `orar%20studenți/${faculty}/${specialization}/${year}/${fileName}`; // Path to the timetable PDF
 
-               const encodedFilePath = encodeURIComponent(filePath).replace(/%2F/g, '/'); // Encode the file path
-
-        console.log("Generated File Path:", encodedFilePath); // Clarifies if the file path was generated correctly
+        console.log("Generated File Path:", filePath); // Clarifies if the file path was generated correctly
 
         // Open the PDF in a new tab
-        window.open(encodedFilePath, '_blank');
+        window.open(filePath, '_blank');
     });
 });
