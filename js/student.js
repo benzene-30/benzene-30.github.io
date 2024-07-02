@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         const fileName = `${faculty}_${specialization}_${year}_${group}.pdf`; // Assuming timetable is in PDF format
-        const filePath = `orar studenți/${faculty}/${specialization}/${year}/${fileName}`; // Path to the timetable PDF
+        const filePath = `orar%20studenți/${faculty}/${specialization}/${year}/${fileName}`; // Path to the timetable PDF
 
         console.log("Generated File Path:", filePath); // Clarifies if the file path was generated correctly
 
