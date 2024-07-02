@@ -254,7 +254,7 @@ PROGRAMS
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid skyblue;
+    border: 0px solid #33333368;
     padding: 0;
     height: 360px;
     text-align: center;
@@ -314,6 +314,7 @@ PROGRAMS
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
     transition: transform 0.3s;
     border-radius: 5px;
 }
@@ -338,11 +339,21 @@ PROGRAMS
     #programs article {
         flex: 1 1 calc(50% - 40px);
     }
+        #programs img {
+        cursor: pointer;
+        transition: transform 0.3s;
+        border-radius: 5px;
+    }
 }
 
 @media screen and (max-width: 480px) {
     #programs article {
         flex: 1 1 calc(100% - 40px);
+    }
+        #programs img {
+        cursor: pointer;
+        transition: transform 0.3s;
+        border-radius: 5px;
     }
 }
 
@@ -354,6 +365,11 @@ PROGRAMS
     .tag-4,
     .tag-5 {
         margin-inline: 65px;
+    }
+        #programs img {
+        cursor: pointer;
+        transition: transform 0.3s;
+        border-radius: 5px;
     }
 }
 
@@ -368,6 +384,11 @@ PROGRAMS
     .tag-4,
     .tag-5 {
         margin-inline: 130px;
+    }
+        #programs img {
+        cursor: pointer;
+        transition: transform 0.3s;
+        border-radius: 5px;
     }
 }
 
