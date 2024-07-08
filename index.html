@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Info Center</title>
+    <link rel="icon" href="images/logo/favicon-uab.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <article>
+                <img src="images/logo/logo.png" class="logo" alt="logo">
+            </article>
+            <article class="desktop-nav-bar">
+                <ul>
+                    <li><a href="https://uab.ro" target="_blank">uab.ro</a></li>
+                    <li class="dropdown">
+                        <a href="#faculties">Facultați</a>
+                        <div class="dropdown-content">
+                            <a href="html/FII.html">Stiinte Exacte si ingineresti</a>
+                            <a href="#">Istorie si Fiologie</a>
+                            <a href="#">Drept si Stiinte Sociale</a>
+                            <a href="#">Stiinte Economice</a>
+                            <a href="#">Teologie Ortodoxa</a>
+                            <a href="#">IOSUD-UAB (Socoala doctorala)</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#buildings">Clădiri</a>
+                        <div class="dropdown-content">
+                            <div class="nested-dropdown">
+                                <a href="#">Administrativ</a>
+                                <div class="nested-dropdown-content">
+                                    <a href="#">Corp A</a>
+                                    <a href="#">Corp H</a>
+                                </div>
+                            </div>
+                            <div class="nested-dropdown">
+                                <a href="#">Sali de clasă</a>
+                                <div class="nested-dropdown-content">
+                                    <a href="#">Corp B</a>
+                                    <a href="#">Corp C</a>
+                                    <a href="#">Corp D</a>
+                                    <a href="#">Corp G</a>
+                                    <a href="#">Corp H</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#help">Ajutor</a></li>
+                </ul>
+            </article>
+            <article class="mobile-nav-bar">
+                <img src="images/button/main-menu.png" class="cdx" alt="Menu" width="40" height="40" id="menuButton">
+                <div id="mobile-nav" class="overlay">
+                    <img src="images/button/close_1.png" class="closebtn" alt="Close" width="40" height="40"
+                        id="closeButton">
+                    <div class="overlay-content">
+                        <ul>
+                            <li><a href="#faculties">Facultați</a></li>
+                            <li><a href="#buildings">Clădiri</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#help">Ajutor</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </nav>
+    </header>
+
+    <div id="wrapper">
+
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="slide active">
+                <video src="images/video/video.mp4" type="video/mp4" autoplay muted loop></video>
+                <div class="hero-text">~ INFO ZONE</div>
+            </div>
+            <div class="slide">
+                <img src="images/slides/slide-1.png" alt="slide-1" width="100px" height="100px">
+                <div class="hero-text">~ INFO ZONE</div>
+            </div>
+            <div class="slide">
+                <img src="images/slides/slide-2.png" alt="slide-2">
+                <div class="hero-text">~ INFO ZONE</div>
+            </div>
+            <div class="slide">
+                <img src="images/slides/slide-3.png" alt="slide-3">
+                <div class="hero-text">~ INFO ZONE</div>
+            </div>
+            <div class="slide">
+                <img src="images/slides/slide-4.png" alt="slide-4">
+                <div class="hero-text">~ INFO ZONE</div>
+            </div>
+            <div class="slide">
+                <img src="images/slides/slide-5.jpg" alt="slide-5">
+                <div class="hero-text">~ INFO ZONE</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </section>
+
+
+        <!-- FACULTIES -->
+        <h3 class="title">Facultați</h3>
+        <section id="Faculties">
+            <div id="schedule">
+                <div class="schedule-img">
+                    <img src="images/othordox.png">
+                </div>
+                <div class="schedule-info">
+                    <h4>Facultatea de <br>Teologie Ortodoxă</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quas, est repudiandae
+                        necessitatibus animi deleniti minus, cupiditate porro iste impedit et.</p>
+                </div>
+                <a href="html/FTO.html"><button>deschideți</button></a>
+            </div>
+            <div id="schedule">
+                <div class="schedule-img">
+                    <img src="images/engineering-computer-science.png">
+                </div>
+                <div class="schedule-info">
+                    <h4>Facultatea de <br>Informatică și Inginerie</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quas, est repudiandae
+                        necessitatibus animi deleniti minus, cupiditate porro iste impedit et.</p>
+                </div>
+                <a href="html/FII.html"><button>deschideți</button></a>
+            </div>
+            <div id="schedule">
+                <div class="schedule-img">
+                    <img src="images/languages.png">
+                </div>
+                <div class="schedule-info">
+                    <h4>Facultatea de <br>Istorie, Litere și Științe ale Educației</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quas, est repudiandae
+                        necessitatibus animi deleniti minus, cupiditate porro iste impedit et.</p>
+                </div>
+                <a href="html/FIL.html"><button>deschideți</button></a>
+            </div>
+
+            <div id="schedule">
+                <div class="schedule-img">
+                    <img src="images/law.png">
+                </div>
+                <div class="halls-info">
+                    <h4>Facultatea de <br> Drept și Științe Sociale</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quas, est repudiandae
+                        necessitatibus animi deleniti minus, cupiditate porro iste impedit et.</p>
+                </div>
+                <a href="html/FDSS.html"><button>deschideți</button></a>
+            </div>
+        </section>
+
+        <!-- BUILDINGS -->
+        <h3 class="title">Clădiri</h3>
+        <section id="Buildings">
+            <div id="halls">
+                <div class="halls-img">
+                    <img src="images/goverment (1).png">
+                </div>
+                <div class="halls-info">
+                    <h4 class="halls-tag">ADMINISTRATIV</h4>
+                    <p>Explorați clădirile administrative ale UAB, unde sunt gestionate eficient operațiunile și
+                        serviciile esențiale ale
+                        universității.</p>
+                </div>
+                <button>deschideți</button>
+            </div>
+
+            <div id="halls">
+                <div class="halls-img">
+                    <img src="images/presentation.png">
+                </div>
+                <div class="halls-info">
+                    <h4 class="halls-tag">SALI DE CLASĂ</h4>
+                    <p>Descoperiți sălile de clasă ale UAB, concepute pentru un mediu de învățare optim, care promovează
+                        excelența academică.</p>
+                </div>
+                <button>deschideți</button>
+            </div>
+        </section>
+
+        <!-- REVIEWS -->
+        <h3 class="reviews-text">REVIEWS</h3>
+        <section id="reviews">
+            <article class="reviews-content">
+                <div class="review-slide active-review">
+                    <img src="images/reviews/client1.jpg" alt="Review from Helen">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>-Helen</p>
+                </div>
+                <div class="review-slide">
+                    <img src="images/reviews/client2.jpg" alt="Review from Max">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>-Max</p>
+                </div>
+                <div class="review-slide">
+                    <img src="images/reviews/client3.jpg" alt="Review from Benson">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>-Benson</p>
+                </div>
+                <div class="review-slide">
+                    <img src="images/reviews/client4.jpg" alt="Review from Abigail">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>-Abigail</p>
+                </div>
+                <div class="review-slide">
+                    <img src="images/reviews/client5.jpg" alt="Review from Alex">
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    <p>-Alex</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <div class="contact-logo">
+                <img src="images/logo/contact-logo.png" alt="logo">
+            </div>
+            <div class="info-container">
+                <h3>Location</h3>
+                <div class="location">
+                    <img src="images/SocialMedia/location.png" width="24px" height="24px" alt="location">
+                    <a href="https://maps.app.goo.gl/gou4k8Fn6aKYPnxi9" target="_blank">
+                        <p>Gabriel Bethlen Nr.5, Alba Iulia</p>
+                    </a>
+                </div>
+            </div>
+            <div class="info-container">
+                <h3>Contact Us</h3>
+                <div class="social-media-icons" id="social">
+                    <a href="mailto:biroulit@uab.ro" target="_blank"><img src="images/SocialMedia/email.png"
+                            alt="Email"></a>
+                    <a href="tel:0786349843" target="_blank"><img src="images/SocialMedia/telephone.png"
+                            alt="Telephone"></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy;Copyrights UAB 2024</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
